@@ -10,6 +10,8 @@ kidney-stone-detection/
 ├── kidney_stone_detector_final.keras
 ├── requirements.txt
 ├── README.md
+├── LICENSE
+├── kidney-stone-detection-using-cnn-lstm.ipynb
 ├── images/
 │   ├── example1.jpg
 │   └── example2.jpg
