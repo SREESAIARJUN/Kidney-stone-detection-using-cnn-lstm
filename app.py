@@ -25,6 +25,14 @@ def load_trained_model():
 
 model = load_trained_model()
 
+# Display example images
+st.subheader("Example Images for Testing")
+col1, col2 = st.columns(2)
+with col1:
+    st.image("images/Normal- (1).jpg", caption="Normal Kidney", use_container_width=True)
+with col2:
+    st.image("images/Stone- (1).jpg", caption="Kidney with Stone", use_container_width=True)
+
 # File uploader
 uploaded_file = st.file_uploader("Choose a CT scan (axial/transverse view only supported) image...", type=["jpg", "jpeg", "png"])
 
