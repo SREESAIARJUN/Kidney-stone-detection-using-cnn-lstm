@@ -13,8 +13,8 @@ kidney-stone-detection/
 ├── LICENSE
 ├── kidney-stone-detection-using-cnn-lstm.ipynb
 ├── images/
-│   ├── example1.jpg
-│   └── example2.jpg
+│   ├── Normal- (1).jpg
+│   └── Stone- (1).jpg
 └── .gitignore
 ```
 
@@ -61,8 +61,19 @@ This will open the application in your default web browser.
 
 ## Usage
 
+### Example Images
+
+For easy testing, some example CT scan images are provided:
+
+- **Normal Image:** ![Normal](images/Normal- (1).jpg)
+- **Kidney Stone Image:** ![Stone](images/Stone- (1).jpg)
+
 - Upload a CT scan image of a kidney (JPEG, JPG, or PNG format).
 - The application will display the image and predict whether a kidney stone is detected.
+
+## Test the Tool
+
+You can test the tool directly [here](https://kidney-stone-detection-using-cnn-lstm.streamlit.app/).
 
 ## License
 
@@ -91,5 +102,3 @@ venv/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-```
-
