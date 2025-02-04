@@ -14,7 +14,7 @@ st.set_page_config(
 # Title and Description
 st.title("Kidney Stone Detection using CNN+LSTM")
 st.write("""
-Upload a CT scan image of the kidney to detect the presence of kidney stones.
+Upload a CT scan (axial/transverse view only supported) image of the kidney to detect the presence of kidney stones.
 """)
 
 # Load the model
@@ -26,7 +26,7 @@ def load_trained_model():
 model = load_trained_model()
 
 # File uploader
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Choose a CT scan (axial/transverse view only supported) image...", type=["jpg", "jpeg", "png"])
 
 def preprocess_image(image):
     # Convert the image to RGB if necessary
